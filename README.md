@@ -20,3 +20,22 @@ yay -S upwork nvm
 ```
 npm i intelephense typescript-language-server
 ```
+
+
+# neovim setup
+
+
+create python env
+
+```
+python3 -m venv {directory} 
+```
+
+```
+pip install pynvim
+```
+
+```
+sudo pacman -S xclip
+```
+
