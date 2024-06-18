@@ -1,5 +1,5 @@
 set updatetime=100
-set nohidden 
+set nohidden
 set autoread
 set number
 set ruler
@@ -14,7 +14,6 @@ syntax on
 set encoding=utf-8
 set wrap
 set autoindent
-set smartindent
 set mouse=a
 
 set nobackup
@@ -22,3 +21,5 @@ set nowritebackup
 set noswapfile
 set cursorline
 set relativenumber
+set smartindent
+set expandtab

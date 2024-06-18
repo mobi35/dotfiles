@@ -14,10 +14,11 @@ local plugins = {
 { "windwp/nvim-autopairs" },
 { "tpope/vim-commentary" },
 { "tpope/vim-abolish" },
+{ "tpope/vim-sleuth" },
 { "zefei/vim-colortuner" },
 { "tommcdo/vim-lion" },
 { 'nvim-treesitter/nvim-treesitter', tag = 'v0.9.2' },
-{ "ntpeters/vim-better-whitespace" },
+-- { "ntpeters/vim-better-whitespace" },
 { "stevearc/oil.nvim" },
 { "lewis6991/gitsigns.nvim" },
 { "kdheepak/lazygit.nvim" },
@@ -42,6 +43,9 @@ dependencies = { 'nvim-lua/plenary.nvim' }
 --
 --
 { "neovim/nvim-lspconfig"},
+{ "williamboman/mason.nvim"},
+{ "williamboman/mason-lspconfig.nvim"},
+
 { "hrsh7th/cmp-nvim-lsp"},
 { "hrsh7th/cmp-buffer"},
 { "hrsh7th/cmp-path"},
@@ -57,7 +61,8 @@ dependencies = {
 },
 { "SirVer/ultisnips"},
 { "quangnguyen30192/cmp-nvim-ultisnips"},
-{ "windwp/nvim-ts-autotag"}
+{ "windwp/nvim-ts-autotag"},
+{'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 }
 
 
