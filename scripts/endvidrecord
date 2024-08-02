@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+# required ffmpeg for recording, and https://github.com/Slackadays/Clipboard for putting the video to clipoard
+
+notify-send "Ending recording.. video will be saved on ~/Videos/recording"
+killall --user $USER --ignore-case --signal INT ffmpeg
+
+recording_dir="$HOME/Videos/recording"
+latest_video=$(ls -t "$recording_dir"/*.mp4 | head -n1)
+
+# xclip -selection clipboard -t video/mp4 -i "$latest_video"
+#
+sleep 3
+
+echo $latest_video;
+
+cb copy $latest_video
+
+notify-send "Copied the video in the clipboard"

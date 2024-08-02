@@ -4,17 +4,19 @@ set autoread
 set number
 set ruler
 let g:AutoPairsFlyMode = 0
+    		
 
 set scrolloff=8
 
 set visualbell
-
 set foldlevelstart=99
 syntax on
 set encoding=utf-8
 set wrap
 set autoindent
 set mouse=a
+set tabstop=4
+set shiftwidth=4
 
 set nobackup
 set nowritebackup
@@ -22,7 +24,6 @@ set noswapfile
 set cursorline
 set relativenumber
 set smartindent
-set expandtab
 
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
@@ -40,3 +41,6 @@ snoremap <silent> <S-Tab> <cmd>lua require('luasnip').jump(-1)<Cr>
 " For changing choices in choiceNodes (not strictly necessary for a basic setup).
 imap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
 smap <silent><expr> <C-E> luasnip#choice_active() ? '<Plug>luasnip-next-choice' : '<C-E>'
+
+
+autocmd FileType css setlocal tabstop=4 shiftwidth=4
